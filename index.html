@@ -7,37 +7,46 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 </head>
 <body>
   <main>
-    <div class="grid-container">
-      <div class="item" id="item-1">
-        <h1> <img src="images/logo.svg" alt="logo"> Fylo</h1>
-        <div class="icon-container">
-          <img src="images/icon-document.svg" alt="documnet">
-          <img src="images/icon-folder.svg" alt="folder">
-          <img src="images/icon-upload.svg" alt="upload">
+    <section class="section section-main">
+      <h1 class="hidden-title">Fylo</h1>
+      <img src="images/logo.svg" alt="Logo" class="logo">
+      <div class="icons">
+        <a class="icon" href="#" aria-label="Documents">
+          <img src="images/icon-document.svg" alt="Document logo">
+        </a>
+        <a class="icon" href="#" aria-label="Folder">
+          <img src="images/icon-folder.svg" alt="Folder logo">
+        </a>
+        <a class="icon" href="#" aria-label="Cloud">
+          <img src="images/icon-upload.svg" alt="Upload logo">
+        </a>
+      </div>
+    </section>
+    <section class="section section-sub">
+      <h2 class="remaining">
+        <span class="remaining-number">185</span><span class="remaining-text"> GB Left</span>
+      </h2>
+      <h3 class="description">You’ve used <span class="description-number">815 GB</span> of your storage</h3>
+      <div class="bar-container">
+        <div class="bar-level">
+          <div class="bar-circle"></div>
         </div>
       </div>
-      <div class="item" id="item-2">
-        <p>
-          You’ve used <span>815 GB</span> of your storage
-        </p>
-        <div class="gbLeft">185 GB LEFT</div>
-        <label for="range">
-          <input type="range" name="range" id="rangeLine">
-          <p>0 GB</p>
-          <p>1000 GB</p>
-        </label>
+      <div class="bar-labels">
+        <h4 class="bar-label">0 GB</h4>
+        <h4 class="bar-label">1000 GB</h4>
       </div>
-    </div>
+    </section>
   </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io/profile/GitHub-dev12345" target="_blank">Frontend Mentor</a>.<br>
+    Coded by <a href="https://github.com/GitHub-dev12345" target="_blank">Dev Rathore</a>.
+  </footer>
 </body>
 </html>
-
-<!--   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
